@@ -1,0 +1,589 @@
+h1
+{
+    color: white;
+    padding: 20px;
+}
+
+h2
+{
+    color: #dc3545;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+h3
+{
+    color: #dc3545;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+h4
+{
+    color: #dc3545;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+a
+{
+    color: #6c757d;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+/* All Screens */
+
+body
+{
+    background-color: #f8f9fa;
+}
+
+.headerContainer
+{
+    background-color: black;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    grid-area: header;
+}
+
+.profile
+{
+    right: 0;
+}
+
+.govLogo
+{
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.socialsContainer
+{
+    background-color: #dc3545;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    grid-area: socials;
+}
+
+.socialsHeader
+{
+    color: white;
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.footerContainer
+{
+    background-color: black;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    grid-area: footer;
+}
+
+.footerHeader
+{
+    color: white;
+    padding-left: 20px;
+}
+
+.infoAndFaqsA
+{
+    color:#6c757d;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+/* Log In Screen Styling */
+
+.logInScreenTopLevel
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". . . . ."
+        ". . . . ."
+        ". . logInForm . ."
+        ". . . . .";
+
+    gap: 5%;
+}
+
+.logInFormContainer
+{
+    grid-area: logInForm;
+    background-color: aliceblue;
+    border: 2px solid #dc3545;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        ". logInHeader ."
+        ". idLabel ."
+        ". idInput ."
+        ". passwordLabel ."
+        ". passwordInput ."
+        ". button ."
+        ". . .";
+    gap: 5px;
+}
+
+.logInHeader
+{
+    font-size: 48px; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #dc3545;
+    grid-area: logInHeader;
+}
+
+.logInIdLabel, .logInPasswordLabel
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logInIdLabel
+{
+    grid-area: idLabel;
+}
+
+.logInPasswordLabel
+{
+    grid-area: passwordLabel;
+}
+
+.logInIdInput, .logInPasswordInput
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+}
+
+.logInIdInput
+{
+    grid-area: idInput;
+}
+
+.logInPasswordInput
+{
+    grid-area: passwordInput;
+    margin-bottom: 20px;
+}
+
+.logInButton
+{
+    grid-area: button;
+}
+
+/* Home Screen Styling */
+
+.homeScreenTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". categoryA . documents ."
+        ". categoryB . otherServices ."
+        ". categoryCF . otherServices ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+.categoryA
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-area: categoryA;
+}
+
+.categoryB
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-area: categoryB;
+}
+
+.categoryCF
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-area: categoryCF;
+}
+
+.documents
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-area: documents;
+}
+
+.otherServices
+{
+    margin-top: -30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    grid-area: otherServices;
+}
+
+/* Profile screen styling */
+
+.profileTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". image . profile ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+.userProfile
+{
+    grid-area: profile;
+}
+
+.userImage
+{
+    grid-area: image;
+}
+
+/* Fees Tables Page */
+
+.feesTableTopLevel
+{
+    display: grid;
+    grid-template-columns: 20% 25% 20% 25% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        "sideBar practicalHeader . . ."
+        "sideBar practical practical practical ."
+        "sideBar theoryHeader . . ."
+        "sideBar theory theory theory ."
+        "sideBar rwHeader . . ."
+        "sideBar rw rw rw ."
+        "sideBar rsHeader . . ."
+        "sideBar rs rs rs ."
+        "sideBar psvHeader . . ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+.sideBarContainer
+{
+    grid-area: sideBar;
+    margin-left: 20px;
+}
+
+.practicalTestsHeader
+{
+    grid-area: practicalHeader;
+}
+
+.feesTablePracticalTests
+{
+    grid-area: practical;
+}
+
+.theoryTestsHeader
+{
+    grid-area: theoryHeader;
+}
+
+.feesTableTheoryTests
+{
+    grid-area: theory;
+}
+
+.roadworthinessHeader
+{
+    grid-area: rwHeader;
+}
+
+.feesTableRoadworthiness
+{
+    grid-area: rw;
+}
+
+.roadServicesHeader
+{
+    grid-area: rsHeader;    
+}
+
+.publicServiceVehiclesHeader
+{
+    grid-area: psvHeader;
+}
+
+.feesTableRoadServices
+{
+    grid-area: rs;
+    margin-bottom: 20px;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+}
+
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+td
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    background-color: f8f9fa;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+th
+{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: black;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Book Practical and Theory Tests Styling */
+
+.bookPracticalTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 10% 60% 10% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". . formTopLevel . ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+section
+{
+    min-height: 650px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    border: 2px solid #dc3545;
+    padding: 10px;
+    position: relative;
+    grid-area: formTopLevel;
+}
+
+.step
+{
+    display: none;
+}
+
+.step.active
+{
+    display: block;
+}
+
+.formField
+{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.nextButton, .previousButton, .submitButton
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+}
+
+.nextButton, .submitButton
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    background-color: #dc3545;
+    color: #f8f9fa;
+    border-radius: 2px;
+}
+
+.previousButton
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+    background-color: #dc3545;
+    color: #f8f9fa;
+    border-radius: 2px;
+}
+
+.applicationLabel
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.questionsLabel
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.personalDetailsLabel
+{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p
+{
+    margin-right: 20px;
+}
+
+.paragraphP
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Apply for a Learners Licence Styling */
+
+.learnersLicenceTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 10% 60% 10% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". . formTopLevel . ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+/* Change Address Styling */
+
+.changeAddressTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". . changeAddressForm . ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+.changeAddressForm
+{
+    grid-area: changeAddressForm;
+    background-color: aliceblue;
+    border: 2px solid #dc3545;
+    min-height: 600px;
+}
+
+.addressFormField
+{
+    margin: 20px;
+}
+
+.submitAddressButton
+{
+    margin: 20px;
+}
+
+/* Duplicate Documents Styling */
+
+.changeAddressTopLevel
+{
+    display: grid;
+    grid-template-columns: 10% 30% 20% 30% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header header"
+        ". . . . ."
+        ". . duplicateForm . ."
+        ". . . . ."
+        "socials socials socials socials socials"
+        "footer footer footer footer footer";
+
+    row-gap: 15px;
+}
+
+.duplicateForm
+{
+    grid-area: duplicateForm;
+    background-color: aliceblue;
+    border: 2px solid #dc3545;
+    min-height: 600px;
+    margin: 30px;
+}
+
+.duplicateFormField
+{
+    margin: 20px;
+}
+
+.submitDuplicateButton
+{
+    margin: 20px;
+}
